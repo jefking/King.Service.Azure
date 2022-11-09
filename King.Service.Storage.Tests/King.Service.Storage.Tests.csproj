@@ -11,7 +11,7 @@
     <Authors>Jef King</Authors>
     <Copyright>© Jef King 2022</Copyright>
     <PackageProjectUrl>https://github.com/jefking/King.Service.Azure</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/jefking/King.Service.Azure/master/icon.png</PackageIconUrl>
+    <PackageIconUrl>icon.png</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/jefking/King.Service.Azure</RepositoryUrl>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -22,7 +22,7 @@
     <PackageReference Include="NSubstitute" Version="4.4.0" />
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
-    <ProjectReference Include="..\King.Service.Storage\King.Service.Storage.csproj" />
+    <ProjectReference Include="..\King.Service.Storage\KingService.Storage.csproj" />
   </ItemGroup>
 
 </Project>
