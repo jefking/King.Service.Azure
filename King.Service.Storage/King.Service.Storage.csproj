@@ -13,10 +13,11 @@
     <PackageId>King.Service.Storage</PackageId>
     <PackageTags>King.Service;King.Service.Azure;Azure;Queue;Service;Bus;WebJob;scale;scaling;linear;exponential;timing;auto-scale;dynamic-scale;dynamic;Queuing;Background;Worker;Work;Data;Processing;Table;Environment;Initialize;Task;Tasks;Dequeue;Dequeuing;King.Azure;run;task;service;services;tasks;scheduling;worker-role</PackageTags>
     <PackageReleaseNotes>Supported versions</PackageReleaseNotes>
-    <PackageIconUrl>https://raw.githubusercontent.com/jefking/King.Service.Azure/master/icon.png</PackageIconUrl>
+    <PackageIconUrl>icon.png</PackageIconUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/jefking/King.Service.Azure</PackageProjectUrl>
     <RepositoryUrl>https://github.com/jefking/King.Service.Azure</RepositoryUrl>
-    <license>https://raw.githubusercontent.com/jefking/King.Service.Azure/master/LICENSE</license>
+    <license>../LICENSE</license>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -32,6 +33,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="" />
     <PackageReference Include="Azure.Data.Wrappers" Version="3.0.10" />
     <PackageReference Include="King.Service" Version="3.0.0" />
     <PackageReference Include="System.Diagnostics.TraceSource" Version="4.3.0" />
