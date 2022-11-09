@@ -19,7 +19,7 @@
 # Ready, Set, Go!
 ## [NuGet](https://www.nuget.org/packages/King.Service.Azure)
 ```
-PM> Install-Package King.Service.Azure
+PM> Install-Package KingService.Storage
 ```
 
 ## [Demo Container](https://hub.docker.com/r/jefking/king.service.demo)
