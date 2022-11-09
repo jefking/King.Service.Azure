@@ -23,7 +23,7 @@ jobs:
     - name: Restore King.Service.Storage dependencies
       run: dotnet restore King.Service.Storage/King.Service.Storage.csproj
     - name: Restore Demo dependencies
-      run: dotnet restore King.Service.Storage.Demo/King.Service.Demo.csproj
+      run: dotnet restore King.Service.Storage.Demo/King.Service.Storage.Demo.csproj
     - name: Build King.Service.Storage
       run: dotnet build --no-restore King.Service.Storage/King.Service.Storage.csproj
     - name: Build Demo
