@@ -35,7 +35,7 @@
   <ItemGroup>
     <None Include="../README.md" Pack="true" PackagePath="" />
     <PackageReference Include="Azure.Data.Wrappers" Version="3.0.10" />
-    <PackageReference Include="King.Service" Version="3.0.0" />
+    <PackageReference Include="King.Service" Version="3.0.1" />
     <PackageReference Include="System.Diagnostics.TraceSource" Version="4.3.0" />
     <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
     <PackageReference Include="System.Threading.Timer" Version="4.3.0" />
