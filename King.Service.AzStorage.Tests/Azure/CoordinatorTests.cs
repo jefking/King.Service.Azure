@@ -1,7 +1,7 @@
 ﻿namespace King.Service.Tests.Unit.Data
 {
     using global::Azure.Data.Wrappers;
-    using King.Service.AzureStorage.Model;
+    using King.Service.AzStorage.Model;
     using King.Service.Data;
     using King.Service.Data.Model;
     using NSubstitute;
