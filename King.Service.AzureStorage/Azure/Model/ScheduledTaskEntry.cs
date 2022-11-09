@@ -1,4 +1,4 @@
-﻿namespace King.Service.AzureStorage.Model
+﻿namespace King.Service.Azure.Model
 {
     using Microsoft.WindowsAzure.Storage.Table;
     using System;
