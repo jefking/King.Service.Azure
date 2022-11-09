@@ -3,8 +3,8 @@ WORKDIR /app
 
 # Copy and build
 COPY ./King.Service.Storage ./King.Service.Storage
-COPY ./King.Service.Tests ./King.Service.Storage.Tests
-COPY ./King.Service.Demo ./Demo
+COPY ./King.Service.Storage.Tests ./King.Service.Storage.Tests
+COPY ./King.Service.Storage.Demo ./Demo
 
 # Unit Test Project
 RUN dotnet test King.Service.Storage.Tests/King.Service.Storage.Tests.csproj
