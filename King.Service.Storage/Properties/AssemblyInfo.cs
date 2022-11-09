@@ -1,11 +1,11 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("King.Service.AzStorage")]
+[assembly: AssemblyTitle("King.Service.Storage")]
 [assembly: AssemblyDescription("Task scheduling for Azure Storage")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Jef King")]
-[assembly: AssemblyProduct("King.Service.AzStorage")]
+[assembly: AssemblyProduct("King.Service.Storage")]
 [assembly: AssemblyCopyright("Copyright © Jef King 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

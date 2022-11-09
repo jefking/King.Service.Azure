@@ -2,15 +2,15 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
 
 # Copy and build
-COPY ./King.Service.AzStorage ./King.Service.AzStorage
-COPY ./King.Service.Tests ./King.Service.AzStorage.Tests
+COPY ./King.Service.Storage ./King.Service.Storage
+COPY ./King.Service.Tests ./King.Service.Storage.Tests
 COPY ./King.Service.Demo ./Demo
 
 # Unit Test Project
-RUN dotnet test King.Service.AzStorage.Tests/King.Service.AzStorage.Tests.csproj
+RUN dotnet test King.Service.Storage.Tests/King.Service.Storage.Tests.csproj
 
 # Public Project
-RUN dotnet publish Demo/King.Service.AzStorage.Demo.csproj -c release
+RUN dotnet publish Demo/King.Service.Storage.Demo.csproj -c release
 
 # Create Output Container Image
 FROM mcr.microsoft.com/dotnet/runtime:6.0
