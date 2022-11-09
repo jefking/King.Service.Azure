@@ -13,7 +13,7 @@
     <PackageId>KingService.Storage</PackageId>
     <PackageTags>KingService;KingService.Azure;Azure;Queue;Service;Bus;WebJob;scale;scaling;linear;exponential;timing;auto-scale;dynamic-scale;dynamic;Queuing;Background;Worker;Work;Data;Processing;Table;Environment;Initialize;Task;Tasks;Dequeue;Dequeuing;King.Azure;run;task;service;services;tasks;scheduling;worker-role</PackageTags>
     <PackageReleaseNotes>First release, moving King.Service Azure dependancies into seperate package.</PackageReleaseNotes>
-    <PackageIconUrl>icon.png</PackageIconUrl>
+    <PackageIconUrl>icon.ico</PackageIconUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/jefking/King.Service.Azure</PackageProjectUrl>
     <RepositoryUrl>https://github.com/jefking/King.Service.Azure</RepositoryUrl>
