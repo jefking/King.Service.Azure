@@ -19,13 +19,13 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
-    - name: Restore King.Service.Storage dependencies
-      run: dotnet restore King.Service.Storage/KingService.Storage.csproj
+    - name: Restore King.Service.Azure dependencies
+      run: dotnet restore King.Service.Azure/King.Service.Azure.csproj
     - name: Restore Demo dependencies
-      run: dotnet restore King.Service.Storage.Demo/King.Service.Storage.Demo.csproj
-    - name: Build King.Service.Storage
-      run: dotnet build --no-restore King.Service.Storage/KingService.Storage.csproj
+      run: dotnet restore King.Service.Azure.Demo/King.Service.Azure.Demo.csproj
+    - name: Build King.Service.Azure
+      run: dotnet build --no-restore King.Service.Azure/King.Service.Azure.csproj
     - name: Build Demo
-      run: dotnet build --no-restore King.Service.Storage.Demo/King.Service.Storage.Demo.csproj
-    - name: Test King.Service.Storage
-      run: dotnet test --no-build --verbosity normal King.Service.Storage.Tests/King.Service.Storage.Tests.csproj
+      run: dotnet build --no-restore King.Service.Azure.Demo/King.Service.Azure.Demo.csproj
+    - name: Test King.Service.Azure
+      run: dotnet test --no-build --verbosity normal King.Service.Azure.Tests/King.Service.Azure.Tests.csproj

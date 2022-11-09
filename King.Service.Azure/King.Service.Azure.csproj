@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <Title>KingService.Storage</Title>
+    <Title>King.Service.Azure</Title>
     <Description>Task scheduling for Azure Storage</Description>
-    <AssemblyTitle>KingService.Storage</AssemblyTitle>
-    <Version>0.0.2</Version>
-    <AssemblyVersion>0.0.2</AssemblyVersion>
-    <FileVersion>0.0.2</FileVersion>
+    <AssemblyTitle>King.Service.Azure</AssemblyTitle>
+    <Version>0.0.1</Version>
+    <AssemblyVersion>0.0.1</AssemblyVersion>
+    <FileVersion>0.0.1</FileVersion>
     <Authors>Jef King</Authors>
     <Copyright>© Jef King 2022</Copyright>
     <TargetFrameworks>net6.0</TargetFrameworks>
-    <AssemblyName>KingService.Storage</AssemblyName>
-    <PackageId>KingService.Storage</PackageId>
-    <PackageTags>KingService;KingService.Azure;Azure;Queue;Service;Bus;WebJob;scale;scaling;linear;exponential;timing;auto-scale;dynamic-scale;dynamic;Queuing;Background;Worker;Work;Data;Processing;Table;Environment;Initialize;Task;Tasks;Dequeue;Dequeuing;King.Azure;run;task;service;services;tasks;scheduling;worker-role</PackageTags>
+    <AssemblyName>King.Service.Azure</AssemblyName>
+    <PackageId>King.Service.Azure</PackageId>
+    <PackageTags>King.Service;King.Service.Azure;Azure;Queue;Service;Bus;WebJob;scale;scaling;linear;exponential;timing;auto-scale;dynamic-scale;dynamic;Queuing;Background;Worker;Work;Data;Processing;Table;Environment;Initialize;Task;Tasks;Dequeue;Dequeuing;King.Azure;run;task;service;services;tasks;scheduling;worker-role</PackageTags>
     <PackageReleaseNotes>First release, moving King.Service Azure dependancies into seperate package.</PackageReleaseNotes>
     <PackageIconUrl>icon.png</PackageIconUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -35,7 +35,7 @@
   <ItemGroup>
     <None Include="../README.md" Pack="true" PackagePath="" />
     <PackageReference Include="Azure.Data.Wrappers" Version="3.0.10" />
-    <PackageReference Include="King.Service" Version="3.0.1" />
+    <PackageReference Include="King.Service" Version="3.0.2" />
     <PackageReference Include="System.Diagnostics.TraceSource" Version="4.3.0" />
     <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
     <PackageReference Include="System.Threading.Timer" Version="4.3.0" />

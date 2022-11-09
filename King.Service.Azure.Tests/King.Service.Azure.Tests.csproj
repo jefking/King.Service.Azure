@@ -5,9 +5,9 @@
     <TargetFrameworks>net6.0</TargetFrameworks>
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <IsPackable>false</IsPackable>
-    <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0</FileVersion>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
     <Authors>Jef King</Authors>
     <Copyright>© Jef King 2022</Copyright>
     <PackageProjectUrl>https://github.com/jefking/King.Service.Azure</PackageProjectUrl>
@@ -22,7 +22,7 @@
     <PackageReference Include="NSubstitute" Version="4.4.0" />
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
-    <ProjectReference Include="..\King.Service.Storage\KingService.Storage.csproj" />
+    <ProjectReference Include="..\King.Service.Azure\King.Service.Azure.csproj" />
   </ItemGroup>
 
 </Project>
