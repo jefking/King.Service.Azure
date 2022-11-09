@@ -1,15 +1,10 @@
 # Task scheduling for Azure
 [![.NET](https://github.com/jefking/King.Service.Azure/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jefking/King.Service.Azure/actions/workflows/dotnet.yml)
-1. Auto-Scale microservices within your compute
-2. Tasks to initialize your resources
- + Create Azure Storage: Queues, Tables and Containers
- + Load WCF services
-3. Create Tasks that Occur:
- + Every X seconds per server instance
- + Every X seconds; lessens frequency to Y when there is limited work
- + That determines the needed rate via frequency of processing tasks
- + Once, even with multiple servers
- + Runs at a specified time (resolution to the hour, or the minute) on one server
+1. Based on [King.Service](https://github.com/jefking/King.Service)
+2. Tasks to initialize your Azure Storage resources
+ + Create: Queues
+ + Create: Tables
+ + Create: Blob Containers
 4. Dequeue from Azure Storage Queues
  + Batches of messages
  + Shards for high throughput
