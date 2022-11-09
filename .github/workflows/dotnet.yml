@@ -20,8 +20,6 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
-    - name: Restore King.Service dependencies
-      run: dotnet restore King.Service/King.Service.csproj
     - name: Restore King.Service.Azure dependencies
       run: dotnet restore King.Service.Azure/King.Service.Azure.csproj
     - name: Restore Demo dependencies

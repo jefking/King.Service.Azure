@@ -2,12 +2,12 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
 
 # Copy and build
-COPY ./King.Service ./King.Service.Azure
+COPY ./King.Service.Azure ./King.Service.Azure
 COPY ./King.Service.Tests ./King.Service.Azure.Tests
 COPY ./King.Service.Demo ./Demo
 
 # Unit Test Project
-RUN dotnet test King.Service.Tests/King.Service.Tests.csproj
+RUN dotnet test King.Service.Azure.Tests/King.Service.Azure.Tests.csproj
 
 # Public Project
 RUN dotnet publish Demo/King.Service.Demo.csproj -c release
