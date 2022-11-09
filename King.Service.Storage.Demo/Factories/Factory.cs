@@ -30,17 +30,8 @@
                 // Initialize Container; creates container if it doesn't already exist
                 new InitializeStorageTask(new StorageQueue(config.GenericQueueName, config.ConnectionString)),
 
-                //basic task
-                new Recurring(),
-
                 //Task once daily on the (specified/current) hour
                 new OnceDaily(config.ConnectionString),
-
-                //Backoff task
-                new Backoff(),
-
-                //Self governing task
-                new Adaptive(),
 
                 //Dequeue task, Backoff behavior
                 new BackoffRunner(new CompanyDequeuer(config.GenericQueueName, config.ConnectionString)),
@@ -50,9 +41,6 @@
 
                 //Dequeue task, Recurring behavior
                 new RecurringRunner(new CompanyDequeuer(config.GenericQueueName, config.ConnectionString)),
-
-                //Auto Scaling Task
-                new DynamicScaler(config),
             });
 
             ///Dequeue examples
