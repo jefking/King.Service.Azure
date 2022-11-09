@@ -11,13 +11,13 @@
     <Authors>Jef King</Authors>
     <Copyright>© Jef King 2022</Copyright>
     <PackageProjectUrl>https://github.com/jefking/King.Service.Azure</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/jefking/King.Service.Azure/master/icon.png</PackageIconUrl>
+    <PackageIconUrl>icon.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/jefking/King.Service.Azure</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\King.Service.Storage\King.Service.Storage.csproj" />
+    <ProjectReference Include="..\King.Service.Storage\KingService.Storage.csproj" />
   </ItemGroup>
 </Project>
