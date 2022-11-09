@@ -36,7 +36,4 @@ docker run -it jefking/king.service.demo <YOUR STORAGE ACCOUNT CONNECTION>
 ```
 
 ## [Docs](https://github.com/jefking/King.Service/wiki)
-View the wiki to learn how to use this.
-
-## Nuget Push
-dotnet nuget push ./King.Service/bin/release/King.Service.Storage.<version>.nupkg --api-key <Key>  --source https://api.nuget.org/v3/index.json
+View the [wiki](https://github.com/jefking/King.Service.Azure/wiki) to learn how to use this.
