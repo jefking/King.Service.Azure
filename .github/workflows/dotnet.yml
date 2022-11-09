@@ -1,0 +1,34 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore King.Service dependencies
+      run: dotnet restore King.Service/King.Service.csproj
+    - name: Restore King.Service.Azure dependencies
+      run: dotnet restore King.Service.Azure/King.Service.Azure.csproj
+    - name: Restore Demo dependencies
+      run: dotnet restore King.Service.Demo/King.Service.Demo.csproj
+    - name: Build King.Service.Azure
+      run: dotnet build --no-restore King.Service.Azure/King.Service.Azure.csproj
+    - name: Build Demo
+      run: dotnet build --no-restore King.Service.Demo/King.Service.Demo.csproj
+    - name: Test King.Service.Azure
+      run: dotnet test --no-build --verbosity normal King.Service.Azure.Tests/King.Service.Azure.Tests.csproj
