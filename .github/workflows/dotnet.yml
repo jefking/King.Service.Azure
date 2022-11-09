@@ -21,12 +21,12 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore King.Service.Azure dependencies
-      run: dotnet restore King.Service.Azure/King.Service.Azure.csproj
+      run: dotnet restore King.Service.Azure/King.Service.AzureStorage.csproj
     - name: Restore Demo dependencies
       run: dotnet restore King.Service.Demo/King.Service.Demo.csproj
     - name: Build King.Service.Azure
-      run: dotnet build --no-restore King.Service.Azure/King.Service.Azure.csproj
+      run: dotnet build --no-restore King.Service.Azure/King.Service.AzureStorage.csproj
     - name: Build Demo
       run: dotnet build --no-restore King.Service.Demo/King.Service.Demo.csproj
     - name: Test King.Service.Azure
-      run: dotnet test --no-build --verbosity normal King.Service.Azure.Tests/King.Service.Azure.Tests.csproj
+      run: dotnet test --no-build --verbosity normal King.Service.AzureStorage.Tests/King.Service.AzureStorage.Tests.csproj
